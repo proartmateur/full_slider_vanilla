@@ -1,0 +1,26 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    img{
+        display: flex;
+        width: auto;
+        height: 100vh;
+       
+    }
+    .show{
+        transform: translate(0px);
+        transition: 0.5s all;
+        transition-timing-function: cubic-bezier(.42,0,.58,1);
+    }
+    .change{
+        transform: translate(2000px);
+        transition: 0.5s all;
+        transition-timing-function: cubic-bezier(.42,0,.58,1);
+    }
+}
