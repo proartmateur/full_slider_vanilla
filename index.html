@@ -7,9 +7,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
-    <img id="slide" class="show" src="./assets/img/img2.jpg" alt="">
+<body onkeydown="keyEvent(event)" onkeyup="metaKeyUp(event)">
 
-    <script src="./index.js"></script>
+    <img id="slide" class="show" src="./assets/img/img2.jpg" alt="">
+    <div id="log" class="log show-log">
+        <div id="slide-num"></div>
+        <div id="auto-play"></div>
+        <div id="speed"></div>
+    </div>
+    <script src="./js/keyboard.js" defer></script>
+    <script src="./js/index.js" defer></script>
 </body>
 </html>

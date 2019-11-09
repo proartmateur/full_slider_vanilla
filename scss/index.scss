@@ -23,4 +23,28 @@ body{
         transition: 0.5s all;
         transition-timing-function: cubic-bezier(.42,0,.58,1);
     }
+    .log{
+        display: flex;
+        background-color: rgba(0,0,0, 0.5);
+        //border: 1px solid red;
+        color: #eee;
+        position: fixed;
+        bottom: 0px;
+        width: 90%;
+        height: 40px;
+        z-index: 3;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: space-around;
+    }
+    .show-log{
+        transform: translateY(0px);
+        transition: 0.5s all;
+        transition-timing-function: cubic-bezier(.42,0,.58,1);
+    }
+    .hide-log{
+        transform: translateY(300px);
+        transition: 0.5s all;
+        transition-timing-function: cubic-bezier(.42,0,.58,1);
+    }
 }
